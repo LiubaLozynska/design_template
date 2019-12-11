@@ -1,3 +1,30 @@
+function navScroll(){
+    let navLinks=$(".navigation-item");
+    for (let i=0; i<navLinks.length; i++)
+    {
+        $(".navigation-item").eq(i).on("click","a", function (event) 
+        {
+            event.preventDefault();
+            if (i > navLinks.length/2)
+                {
+                    i=i-navLinks.length/2;
+                }
+            let id='#scroll'+i;
+            let target=$(id);
+            let to = $(target).offset().top;
+            window.scrollBy({ top: to, behavior: 'smooth' });
+        });
+    }
+};
+
+function contactButtonScroll(){
+    $("#nav-button").on("click", function()
+    {
+        let to=$('#scroll6').offset().top;
+        window.scrollBy({ top: to, behavior: 'smooth' });
+    })
+};
+
 function loadMoreWork(){
     function hideWork(){
         $(".removeOne").remove();
@@ -51,28 +78,10 @@ function videoClick(){
 }
 
 $(document).ready(function(){
-    let navLinks=$(".navigation-item");
-    for (let i=0; i<navLinks.length; i++)
-    {
-        $(".navigation-item").eq(i).on("click","a", function (event) {
-            event.preventDefault();
-            if (i > navLinks.length/2)
-        {
-            i=i-navLinks.length/2;
-        }
-            let id='#scroll'+i;
-            let target=$(id);
-            console.log(this, id, target)
-            let to = $(target).offset().top;
-            console.log(to)
-    
-            window.scrollBy({ top: to, behavior: 'smooth' });
-        });
-    }
-    
+    navScroll();
+    contactButtonScroll();
+    loadMoreWork();
+    videoClick();
 });
-
-loadMoreWork();
-videoClick();
 
  
