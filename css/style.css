@@ -199,12 +199,6 @@ i.fas{
     opacity:0;
     
 }
-.carousel-control-prev{
-    left: -150px;
-}
-.carousel-control-next{
-    right: -150px;
-}
 .carousel-indicators li{
     border-radius: 50%;
     width:10px;
@@ -315,6 +309,12 @@ footer p{
     .footer-logo{
         font-size: 10px;
     }
+    .carousel-control-prev{
+        left: -50px;
+    }
+    .carousel-control-next{
+        right: -50px;
+    }
 }
   
   @media (min-width: 577px) and (max-width: 768px) {
@@ -325,12 +325,24 @@ footer p{
     .professional-skills-text{
         padding-left: 50px;
     }
+    .carousel-control-prev{
+        left: -80px;
+    }
+    .carousel-control-next{
+        right: -80px;
+    }
   }
   
   @media (min-width: 769px) and (max-width: 992px) {
     blockquote
     { 
         font-size:19px; 
+    }
+    .carousel-control-prev{
+        left: -100px;
+    }
+    .carousel-control-next{
+        right: -100px;
     }
   }
   
@@ -339,6 +351,12 @@ footer p{
     { 
         font-size:20px; 
     }
+    .carousel-control-prev{
+        left: -120px;
+    }
+    .carousel-control-next{
+        right: -120px;
+    }
   }
   
   @media (min-width: 1201px) {
@@ -346,4 +364,10 @@ footer p{
     { 
         font-size:25px; 
     }
+    .carousel-control-prev{
+    left: -150px;
+}
+.carousel-control-next{
+    right: -150px;
+}
   }
