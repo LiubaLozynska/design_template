@@ -163,9 +163,6 @@ i.fas{
 .square:hover{
     background: url(..//img/eye.png) no-repeat center center #1ecbc6;
 }
-.services-item{
-    width:230px;
-}
 .testimonials{
     height: 500px;
     text-align: center;
@@ -315,6 +312,7 @@ footer p{
     .carousel-control-next{
         right: -25px;
     }
+
   
 }
   
@@ -326,6 +324,7 @@ footer p{
     .professional-skills-text{
         padding-left: 50px;
     }
+  
 
   }
   
@@ -334,6 +333,7 @@ footer p{
     { 
         font-size:19px; 
     }
+  
    
 }
   
@@ -348,6 +348,7 @@ footer p{
     .carousel-control-next{
         right: -120px;
     }
+    
    
   }
   
@@ -362,5 +363,6 @@ footer p{
 .carousel-control-next{
     right: -150px;
 }
+
 
   }
