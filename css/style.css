@@ -309,6 +309,9 @@ footer p{
     .footer-logo{
         font-size: 10px;
     }
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
 }
   
   @media (min-width: 577px) and (max-width: 768px) {
@@ -319,12 +322,18 @@ footer p{
     .professional-skills-text{
         padding-left: 50px;
     }
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
   }
   
   @media (min-width: 769px) and (max-width: 992px) {
     blockquote
     { 
         font-size:19px; 
+    }
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
     }
 }
   
